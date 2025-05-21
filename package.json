@@ -1,0 +1,20 @@
+{
+  "name": "hello-world",
+  "version": "1.0.0",
+  "description": "Esercizio-node-hello-world",
+  "main": "Index.js",
+  "scripts": {
+    "dev": "node Index.js"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GiovanniGarlaschini22/node-hello-world.git"
+  },
+  "author": "Giovanni Garlaschini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GiovanniGarlaschini22/node-hello-world/issues"
+  },
+  "homepage": "https://github.com/GiovanniGarlaschini22/node-hello-world#readme"
+}

@@ -1,0 +1,18 @@
+CONSEGNA ESERCIZIO: "node-hello-world"
+REPOSITORY: node-hello-world
+
+1. Creiamo l'applicazione con NodeJs e inizializziamola con `npm init`.
+
+2. Scriviamo un file `index.js` che dovrà stampare nel terminale “Hello World”.
+- Proviamo ad eseguirlo dal terminale stesso usando i comandi di node base.
+
+3. Impostiamo ora uno script “dev” in `package.json` e facciamo in modo di lanciare il nostro script con `npm run dev`.
+- Lanciamolo e proviamo a cambiare il nostro codice in modo che stampi nel terminale “Hello Boolean”.
+- Dovremmo vedere il terminale senza fermare e rilanciare il server.
+
+RAGIONAMENTO LOGICO:
+- creo script "Index.js";
+- inizializzo lo script dal terminale con il comando "npm init";
+- All'interno del "package.json" generato dal terminale, sotto la graffa di script scrivo "type": "module";
+- All'interno del "package.json" generato dal terminale, al posto di "test" imposto lo script "dev": "node Index.js";
+- Con il comando "npm run dev" dal terminale, lancio lo script e verifico se stampa "Hello World";
