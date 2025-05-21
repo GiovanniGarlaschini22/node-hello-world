@@ -16,3 +16,40 @@ RAGIONAMENTO LOGICO:
 - All'interno del "package.json" generato dal terminale, sotto la graffa di script scrivo "type": "module";
 - All'interno del "package.json" generato dal terminale, al posto di "test" imposto lo script "dev": "node Index.js";
 - Con il comando "npm run dev" dal terminale, lancio lo script e verifico se stampa "Hello World";
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+BONUS:
+
+1. Proviamo a modificare la nostra app Node, in modo da passare dal terminale una frase diversa da “Hello Boolean”. Forse potrà servirvi qualcosa vista ieri!
+
+2. Risolvere questi due snack, creando delle funzioni in un file separato, utilizzando moduli
+
+a. Conta le Vocali
+Obiettivo: Calcolare quante vocali ci sono in una stringa fornita come argomento.
+Istruzioni:
+    - Lo script deve accettare una parola o frase come argomento dal terminale.
+    - Calcolare e stampare quante vocali (a, e, i, o, u) sono presenti nella stringa.
+
+b. Trova il Numero Maggiore
+Obiettivo: Determinare il numero più grande in una lista di numeri.
+Istruzioni:
+    - Lo script deve accettare una lista di numeri separati da spazio come argomento dal terminale.
+    - Restituire il numero più grande tra quelli forniti.
+
+
+RAGIONAMENTO LOGICO BONUS:
+
+- Per passare al terminale la nuova frase: “Hello Boolean” utilizzo la variabile "process":
+    - creo la funzione "printNewString" nello script functions, la funzione deve ritornare due valori: hello e name;
+    - esporto la funzione;
+    - importo la funzione nello script "Index.js"; 
+    - utilizzo la variabile process che da la chiave "argv" ovvero un insieme di argomenti che vengono passati dal terminal;
+    - Detto ciò scrivo:
+    const hello = process.argv[2];
+    const name = process.argv[3];
+    Dove 2 é l'indice che corrisponde a "hello";
+    DOve 3 é l'indice che corrisponde a "name";
+
+    Nel terminale quindi crivo "node Index.js Hello Boolean",
+    così che quando eseguo il comando nel terminale verrà stampata la nuova stringa e compariranno i nuovi valori "Hello" "Boolean";
